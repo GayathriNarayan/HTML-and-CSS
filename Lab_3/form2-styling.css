@@ -1,0 +1,32 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input, select {
+    padding: 10px;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 20px;
+  }
+
+  div.container {
+    border-radius: 5px;
+    background-color: #91c8e7;
+    padding: 20px;
+    width: 40%;
+  }
+
+  input[type='submit']{
+    width: 30%;
+    background-color: #f0f3f5;
+    color: rgb(10, 9, 9);
+    padding: 14px 20px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+  input[name="radio1"], input[name="radio2"], input[name="radio3"]{
+        accent-color: black
+      }

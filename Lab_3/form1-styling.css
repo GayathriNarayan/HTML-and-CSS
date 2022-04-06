@@ -1,0 +1,32 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 30px;
+  }
+
+  div.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+
+  input[type='submit']{
+    width: 30%;
+    background-color: #7bc6f8;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto; 
+      }
+  
