@@ -1,0 +1,62 @@
+article h1{
+    font-size: 80px;
+    
+}
+
+article p{
+    font-style: italic;
+    font-size: 30px;
+}
+
+p{
+    font-size: 50px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #cccccc;
+}
+
+section{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+footer{
+    background-color: #444;
+}
+
+footer p{
+    color: #cccccc;
+    text-align: center;
+    font-size: 30px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px; 
+    background-color: #cccccc;
+}
+
+ul{
+    background-color: #444; 
+    text-align: center; 
+    padding: 0px;
+}
+
+li{
+    font-size: 32px;
+    line-height: 40px;
+    height: 40px;
+    padding: 20px;
+    display: inline;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
