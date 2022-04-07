@@ -1,0 +1,34 @@
+<!--7. Next Day
+Write a JS function that calculates the date of the next day by given year, month and day.
+The input comes as array of three string elements that need to be parsed as numbers. The first element is the year, 
+the second is the month and the third is the day.
+The output should be returned as a result of your function.
+
+input = ['2016', '9', '30']     output = 2016-10-1
+-->
+<html>
+    <head>
+        <title>Next Day</title>
+        <script>
+            var year = '2016', month = '9', day = '30';
+            let dateString = [year, month, day];
+
+            console.log("Input date is: " + year +"-" + month +"-"+ day);
+     
+            //function to print the next day
+            console.log("The next date is:" + NextDay(dateString));
+            
+            //Return the next date
+            function NextDay(dateString)
+            {
+                const d = new Date(parseInt(dateString[0]), parseInt(dateString[1])-1, parseInt(dateString[2]));
+                d.setDate(d.getDate() + 1);
+
+                let str = d.getFullYear()+ "-" + eval(d.getMonth()+1) + "-" + d.getDate();
+                return str;
+            }            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

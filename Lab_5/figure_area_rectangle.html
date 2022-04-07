@@ -1,0 +1,83 @@
+<!-- 6. Figure Area
+Write a JS function that calculates the area of the figure on the right by given values for w, h, W and H. The lower right corner is always common for the two rectangles.
+The input comes as array of string elements that need to be parsed as numbers.
+The output should be returned as a result of your function.
+
+input = ['2', '4', '5', '3']   output = 17  
+input = ['13', '2', '5', '8']  output = 56  
+-->
+
+
+<html>
+    <head>
+        <title>Figure Area</title>
+    </head>
+    <body>
+        <script>
+
+            var input1 = ['2', '4', '5', '3'];  //[r1_width, r1_height, r2_width, r2_height]
+            var input2 =  ['13', '2', '5', '8']; //[q1_width, q1_height, q2_width, q2_height]
+            
+            var r1_width = parseInt(input1[0]), r1_height = parseInt(input1[1]), r2_width = parseInt(input1[2]), r2_height = parseInt(input1[3]);
+            
+            console.log("input1 = ['2', '4', '5', '3']");
+
+            var area_r1 =  areaOfRectangle(r1_width, r1_height); //Area of rectangle r1
+            var area_r2 =  areaOfRectangle(r2_width, r2_height); //Area of rectangle r2
+
+            var area_r3 =  areaOfRectangle( r1_width , r2_height); //Area of common rectangle r3
+            var area_diagram1 = (area_r1 + area_r2) - area_r3; //Area of given diagram
+            console.log("Area of given diagram:" + area_diagram1);
+
+
+            var q1_width = parseInt(input2[0]), q1_height = parseInt(input2[1]), q2_width = parseInt(input2[2]), q2_height = parseInt(input2[3]);
+
+            console.log("input = ['13', '2', '5', '8']");
+
+            var area_q1 =  areaOfRectangle(q1_width, q1_height); //Area of rectangle q1
+            var area_q2 =  areaOfRectangle(q2_width, q2_height); //Area of rectangle q2
+
+            var area_q3 =  areaOfRectangle( q2_width , q1_height); //Area of common rectangle q3
+            var area_diagram2 = (area_q1 + area_q2) - area_q3; //Area of given diagram
+            console.log("Area of given diagram:" + area_diagram2);
+
+            function areaOfRectangle(height, width)
+            {
+                area = height* width;
+                return area;
+            }
+
+
+
+         
+
+
+
+            /* var r1_width = '2' , r1_height = '4' , r2_width = '5' , r2_height = '3';
+            var  r3_width = r1_width , r3_height = r2_height;
+
+            input1 = [parseInt(r1_width), parseInt(r1_height),parseInt(r2_width),parseInt(r2_height)];
+
+            console.log("Input parameter for rectangle1 and rectangle2 ---->" + input1);
+
+            var area_r1 =  areaOfRectangle(r1_width, r1_height);
+            console.log("Area of rectangle1 ---->" + area_r1);
+
+            
+            var area_r2 =  areaOfRectangle(r2_width, r2_height);
+            console.log("Area of rectangle2 ---->" +  area_r2);
+
+            var area_r3 =  areaOfRectangle(r3_width, r3_height);
+            console.log("Area of common rectangle3 ---->" + area_r3);
+
+            var area_diagram = (area_r1 + area_r2) - area_r3;
+            console.log("Area of given diagram ---->" + area_diagram); */
+
+
+
+           
+
+
+        </script>
+    </body>
+</html>

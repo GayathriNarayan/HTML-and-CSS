@@ -1,0 +1,83 @@
+<!-- 8. Distance between Points
+Write a JS function that calculates the distance between two points by given x and y coordinates. Use objects to store the two points.
+The input comes as array of four string elements in the format [x1, y1, x2, y2] that need to be parsed as numbers. Each pair of elements are the coordinates of a point in 2D space.
+The output should be returned as a result of your function.
+
+Examples Input Output
+Input = ['2', '4', '5', '0']  Output = 5
+
+Input = ['2.34', '15.66', '-13.55', '-2.9985']  Output = 24.50778901186315
+ -->
+
+
+
+<html>
+    <head>
+        <title>Distance between points</title>
+    </head>
+    <body>
+        <script>
+
+            let input1 = ['2', '4', '5', '0'] ;  //[x1, y1, x2, y2]
+            let input2 = ['2.34', '15.66', '-13.55', '-2.9985']; //[x1, y1, x2, y2]
+ 
+            createObject(input1);
+            createObject(input2);
+            
+            
+            function createObject(input)
+            {
+            var point1 = new Object();
+            point1.x = parseFloat(input[0]);
+            point1.y = parseFloat(input[1]);
+
+            var point2 = new Object();
+            point2.x = parseFloat(input[2]);
+            point2.y = parseFloat(input[3]);
+
+            CalculateDistance(point1.x, point1.y, point2.x, point2.y);
+
+            }
+
+            //Calculating the distance between two points
+            function CalculateDistance(x1, y1, x2, y2)
+            {
+                let distance = 0;
+                let a = (x2 - x1)*(x2 - x1);
+                let b = (y2 - y1)*(y2 - y1);
+
+                distance = Math.sqrt(a + b);
+
+                console.log("Distance between two points is :" + distance);
+
+            }
+            
+            
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+            
+           
+
+
+           
+
+
+
+            
+
+
+
+
+
+
+           
+
+
+

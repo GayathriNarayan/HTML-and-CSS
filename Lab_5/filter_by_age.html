@@ -1,0 +1,52 @@
+<!-- 4. Filter By Age
+Write a JS function that stores the name and age of two persons in objects and then filters them by minimum age.
+The input comes as array of string elements. The first element is the minimum age. The second and third elements are the name and age of the first person and the fourth 
+and fifth element – the name and age of the second person. The three age parameters need to be parsed as numbers. 
+
+input = ['12', 'John', '15', 'Alfred', '9']   output = { name: 'John', age: 15 } -->
+
+
+<html>
+    <head>
+        <title>Filter By Age using objects</title>
+    </head>
+    <body>
+        
+        <script>
+
+            var min_age = '12',person1 = 'Jahn' , person1_age= '15', person2 = 'Alfred' , person2_age = '9';
+
+            let input = [min_age, person1, parseInt(person1_age), person2, parseInt(person2_age)];
+            
+
+            var person1 = new Object();
+            person1.name = input[1];
+            person1.age = parseInt(input[2]);
+            
+            if(minimunAge(min_age, person1) == true)
+            {
+                console.log(person1);
+            }
+
+            var person2 = new Object();
+            person2.name = input[3];
+            person2.age = parseInt(input[4]);
+            if(minimunAge(min_age, person2) == true)
+            {
+                console.log(person2);
+            }
+
+
+            function minimunAge(min_age, obj)
+            {
+                if(obj.age >= min_age)
+                {
+                    return true;
+
+                }
+
+            }
+               
+        </script>
+    </body>
+</html>
